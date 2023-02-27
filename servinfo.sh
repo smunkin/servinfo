@@ -29,5 +29,5 @@ echo -e "\nServices Status: "
 [ "$(pidof $serv4)" ] && echo -e "[$GREEN  OK  $BLACK] $serv4" || echo -e "[$RED FAIL $BLACK] $serv4"
 [ $(pgrep $serv5) ] && echo -e "[$GREEN  OK  $BLACK] $serv5" || echo -e "[$RED FAIL $BLACK] $serv5"
 # if docker containers
-#[ "$(docker ps | grep $docker_serv1)" ] && echo -e "$[$GREEN OK $BLACK] docker_serv1" || echo -e "[$RED FAIL $BLACK] docker_serv1"
+#[ "$(docker ps | grep $docker_serv1)" ] && echo -e "$[$GREEN OK $BLACK] $docker_serv1" || echo -e "[$RED FAIL $BLACK] $docker_serv1"
 echo -e "\n"
